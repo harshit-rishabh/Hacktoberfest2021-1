@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+  int n,SH,SM,EH,EM,hrs,min;
+  cin>>n;
+ 
+  for(int i=1;i<=n;i++){
+      cin>>SH>>SM>>EH>>EM;
+  if (SM>EM)
+  {
+      hrs=(EH-SH)-1;
+      min=(60-SM)+EM;
+      cout<<"duration is "<<hrs<<" "<<min<<endl;
+  }
+  else
+  {
+      hrs=(EH-SH);
+      min=(EM-SM);
+      cout<<<<"duration is "hrs<<" "<<min<<endl;
+  }
+  }
+  
+  
+  
+
+  return 0;
+}
